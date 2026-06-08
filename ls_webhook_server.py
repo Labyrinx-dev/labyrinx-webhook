@@ -27,7 +27,8 @@ LICENSE_SECRET_PATH = None  # Set via CLI arg
 
 # Map LS variant IDs to Labyrinx tiers
 LS_VARIANT_TIER = {
-    # "variant_id_from_ls": "labyrinx_tier",
+    "1125927": "pro",
+    "1125914": "enterprise",
 }
 
 TIER_EXPIRY = {
