@@ -263,8 +263,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Labyrinx LS Webhook Server")
     parser.add_argument("--port", type=int, default=8080)
     parser.add_argument("--host", default="0.0.0.0")
-    parser.add_argument("--secret-key", required=True,
-                        help="Path to 16-byte license secret")
+    parser.add_argument("--secret-key", default=None,
+                        help="Path to 16-byte license secret (optional, use LICENSE_SECRET env var instead)")
     parser.add_argument("--webhook-secret",
                         help="LS signing secret (or set LS_WEBHOOK_SECRET env var)")
     args = parser.parse_args()
